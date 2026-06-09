@@ -105,7 +105,7 @@ def handle_query(query: str):
     ])
 
     llm = ChatAnthropic(model="claude-sonnet-4-6", temperature=0, max_tokens=1024)
-    chain = prompt | llm | StrOutputParser()gi
+    chain = prompt | llm | StrOutputParser()
 
     print("[answer]\n")
     answer = chain.invoke({"context": context, "question": query})
