@@ -1,0 +1,20 @@
+# Secrets
+.env
+*.env
+
+# Vector store (rebuild locally — too large for git)
+vectorstore/
+
+# Raw docs (re-download with ingest.py)
+data/raw/
+data/processed/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
