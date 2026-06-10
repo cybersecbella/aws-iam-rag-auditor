@@ -39,8 +39,8 @@ def load_web_docs(urls: list[str]):
     print(f"[ingest] Loading {len(urls)} AWS doc pages...")
     loader = WebBaseLoader(
         web_paths=urls,
-        bs_kwargs={"features": "html.parser"},
     )
+    loader.default_parser = "html.parser"
     docs = loader.load()
     print(f"[ingest] Loaded {len(docs)} documents")
     return docs
@@ -97,7 +97,7 @@ def add_hardcoded_iam_rules(vectorstore, embeddings):
     Inject known IAM security rules directly into the vector store.
     These supplement the AWS docs with explicit security guidance.
     """
-    from langchain.schema import Document
+    from langchain_core.documents import Document
 
     iam_rules = [
         Document(

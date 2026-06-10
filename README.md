@@ -24,7 +24,7 @@ Paste any IAM policy and get back:
 
 ### 1. Clone and install
 ```bash
-git clone https://github.com/YOUR_USERNAME/aws-iam-rag-auditor
+git clone https://github.com/cybersecbella/aws-iam-rag-auditor
 cd aws-iam-rag-auditor
 pip install -r requirements.txt
 ```
