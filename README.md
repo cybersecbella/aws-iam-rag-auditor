@@ -6,7 +6,7 @@ AWS IAM Security RAG System
 A Retrieval-Augmented Generation (RAG) system that ingests AWS IAM documentation
 and audits IAM policies for security misconfigurations, privilege escalation paths, and CIS benchmark violations — in plain English.
 
-Built by - https://cybersecbella.com —
+Built by - cybersecbella - code explanation and testing at https://www.cybersecbella.com/articles/iam-auditor/
 
 ---
 
